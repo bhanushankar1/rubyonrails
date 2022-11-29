@@ -1,0 +1,62 @@
+<%= form_with(model: mrk, local: true) do |form| %>
+  <% if mrk.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(mrk.errors.count, "error") %> prohibited this mrk from being saved:</h2>
+
+      <ul>
+        <% mrk.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :m1 %>
+    <%= form.number_field :m1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :m2 %>
+    <%= form.number_field :m2 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :m3 %>
+    <%= form.number_field :m3 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :m4 %>
+    <%= form.number_field :m4 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :m5 %>
+    <%= form.number_field :m5 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :total %>
+    <%= form.number_field :total %>
+  </div>
+
+  <div class="field">
+    <%= form.label :percent %>
+    <%= form.number_field :percent %>
+  </div>
+
+  <div class="field">
+    <%= form.label :rank %>
+    <%= form.number_field :rank %>
+  </div>
+
+  <div class="field">
+    <%= form.label :schol_id %>
+    <%= form.text_field :schol_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

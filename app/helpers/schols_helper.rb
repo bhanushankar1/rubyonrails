@@ -1,0 +1,2 @@
+module ScholsHelper
+end

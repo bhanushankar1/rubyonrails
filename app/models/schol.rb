@@ -1,0 +1,2 @@
+class Schol < ApplicationRecord
+end
